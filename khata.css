@@ -1,0 +1,51 @@
+body{
+    /* background-color: antiquewhite; */
+    width: auto;
+    height: auto;
+    /* padding: 2px; */
+}
+
+.detail{
+    /* background-color: grey; */
+    /* width: 50%;
+    height: auto; */
+    width: auto;
+    height: auto;
+}
+
+.youGaveCss{
+    border: 2px solid green;
+    background-color: transparent;
+    color: #ffff;
+    border-radius: 20px;
+    margin: 0px 10px;
+    width: 45%;
+    height: auto;
+    background-color: green;
+    
+    
+
+}
+
+.youGotCss{
+    border: 2px solid red;
+    background-color: transparent;
+    color: #ffff;
+    border-radius: 20px;
+    margin: 0px 10px;
+    width: 45%;
+    height: auto;
+    background-color: red;
+}
+
+.form-control{
+    width: 70%;
+}
+
+.customerdetailCss{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
