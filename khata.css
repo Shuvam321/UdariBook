@@ -14,14 +14,14 @@ body{
 }
 
 .youGaveCss{
-    border: 2px solid green;
+    border: 2px solid #2ac07a;
     background-color: transparent;
     color: #ffff;
     border-radius: 20px;
     margin: 0px 10px;
     width: 45%;
     height: auto;
-    background-color: green;
+    background-color: #2ac07a;
     
     
 
