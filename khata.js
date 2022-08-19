@@ -91,7 +91,7 @@ function youGotFun() {
     let gavDiv = document.getElementById('gaDiv');
     let contentDiv = document.createElement('div');
     let heading = document.createElement('h3');
-    heading.innerHTML = "You Gave me money";
+    heading.innerHTML = "You Got me money";
     console.log(heading);
 
     // gavDiv.appendChild(heading)
