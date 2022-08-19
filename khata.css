@@ -16,7 +16,7 @@ body{
 }
 
 .youGaveCss{
-    border: 2px solid #2ac07a;
+    border: 2px solid green;
     background-color: transparent;
     color: #ffff;
     border-radius: 20px;
@@ -59,21 +59,43 @@ body{
     /* color: yellow; */
 }
 
-#inputCss{
+#inputGaveCss{
     margin-left: 20px;
     padding: 12px;
     box-shadow: 1px 3px #888888;
     border: none;
     width: 90%;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* color: green; */
 }
 
-.headingCss{
+.headingGaveCss{
     text-align: center;
     color: green;
     font-weight: bolder;
 }
 
-.lineCss{
+.lineGaveCss{
     color: #004000f6;
+    /* border:  solid green; */
+}
+
+#inputGotCss{
+    margin-left: 20px;
+    padding: 12px;
+    box-shadow: 1px 3px #888888;
+    border: none;
+    width: 90%;
+    color: red;
+}
+
+.headingGotCss{
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+}
+
+.lineGotCss{
+    color: red;
     /* border:  solid green; */
 }

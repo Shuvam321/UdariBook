@@ -67,11 +67,11 @@ function youGaveFun() {
     let gavDiv = document.getElementById('gaDiv');
     let contentDiv = document.createElement('div');
     let heading = document.createElement('h3');
-    heading.classList.add('headingCss');
+    heading.classList.add('headingGaveCss');
     let line = document.createElement('hr');
-    line.classList.add('lineCss');
+    line.classList.add('lineGaveCss');
     let inputDetail = document.createElement('input');
-    inputDetail.setAttribute('id','inputCss');
+    inputDetail.setAttribute('id','inputGaveCss');
     inputDetail.setAttribute('type','number')
     inputDetail.setAttribute('placeholder','Enter Amount')
     heading.innerHTML = "You Gave Rs 0 to Me";
@@ -100,15 +100,30 @@ function youGotFun() {
     let gavDiv = document.getElementById('gaDiv');
     let contentDiv = document.createElement('div');
     let heading = document.createElement('h3');
-    heading.innerHTML = "You Got me money";
+    heading.classList.add('headingGotCss');
+    let line = document.createElement('hr');
+    line.classList.add('lineGotCss');
+    let inputDetail = document.createElement('input');
+    inputDetail.setAttribute('id','inputGotCss');
+    inputDetail.setAttribute('type','number')
+    inputDetail.setAttribute('placeholder','Enter Amount')
+    heading.innerHTML = "You Got Rs 0 to Me";
     console.log(heading);
 
     // gavDiv.appendChild(heading)
     contentDiv.appendChild(heading);
+    contentDiv.appendChild(line)
+    contentDiv.appendChild(inputDetail);
     mainContent.appendChild(contentDiv);
 
     mainBody.appendChild(mainContent);
     console.log(mainContent);
     console.log(contentDiv);
+    // console.log(gavDiv)
+    // mainContent.appendChild(contentDiv);
+    // console.log(mainContent);
+
+    // gavDiv.appendChild(contentDiv);
+
 
 }
