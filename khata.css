@@ -1,5 +1,5 @@
 body{
-    /* background-color: antiquewhite; */
+    background-color: whitesmoke;
     width: auto;
     height: auto;
     /* padding: 2px; */
@@ -11,6 +11,8 @@ body{
     height: auto; */
     width: auto;
     height: auto;
+    background-color: whitesmoke;
+
 }
 
 .youGaveCss{
