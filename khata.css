@@ -24,6 +24,9 @@ body{
     width: 45%;
     height: auto;
     background-color: #2ac07a;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
     
     
 
@@ -38,6 +41,9 @@ body{
     width: 45%;
     height: auto;
     background-color: red;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
 }
 
 .form-control{
