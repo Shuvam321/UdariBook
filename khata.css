@@ -23,7 +23,7 @@ body{
     margin: 0px 10px;
     width: 45%;
     height: auto;
-    background-color: #2ac07a;
+    background-color: green;
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -47,7 +47,7 @@ body{
 }
 
 .form-control{
-    width: 70%;
+    width: 60%;
 }
 
 .customerdetailCss{
@@ -56,4 +56,24 @@ body{
     font-family: 'Courier New', Courier, monospace;
     padding-bottom: 20px;
     font-size: 25px;
+    /* color: yellow; */
+}
+
+#inputCss{
+    margin-left: 20px;
+    padding: 12px;
+    box-shadow: 1px 3px #888888;
+    border: none;
+    width: 90%;
+}
+
+.headingCss{
+    text-align: center;
+    color: green;
+    font-weight: bolder;
+}
+
+.lineCss{
+    color: #004000f6;
+    /* border:  solid green; */
 }

@@ -67,11 +67,20 @@ function youGaveFun() {
     let gavDiv = document.getElementById('gaDiv');
     let contentDiv = document.createElement('div');
     let heading = document.createElement('h3');
-    heading.innerHTML = "You Gave me money";
+    heading.classList.add('headingCss');
+    let line = document.createElement('hr');
+    line.classList.add('lineCss');
+    let inputDetail = document.createElement('input');
+    inputDetail.setAttribute('id','inputCss');
+    inputDetail.setAttribute('type','number')
+    inputDetail.setAttribute('placeholder','Enter Amount')
+    heading.innerHTML = "You Gave Rs 0 to Me";
     console.log(heading);
 
     // gavDiv.appendChild(heading)
     contentDiv.appendChild(heading);
+    contentDiv.appendChild(line)
+    contentDiv.appendChild(inputDetail);
     mainContent.appendChild(contentDiv);
 
     mainBody.appendChild(mainContent);
