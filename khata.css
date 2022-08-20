@@ -99,3 +99,29 @@ body{
     color: red;
     /* border:  solid green; */
 }
+
+#buttonGotCss{
+    border: 2px solid;
+    /* position: fixed;
+    bottom: 40px;
+    right: 0px; */
+    width: 100%;
+    color: red;
+    border-radius: 15px;
+    /* border: none; */
+    box-shadow: 2px 1px red;
+    margin-top: 18px;
+}
+
+#buttonGaveCss{
+    border: 2px solid;
+    /* position: fixed;
+    bottom: 40px;
+    right: 0px; */
+    width: 100%;
+    color: green;
+    border-radius: 15px;
+    /* border: none; */
+    box-shadow: 2px 1px green;
+    margin-top: 18px;
+}

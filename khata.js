@@ -72,15 +72,22 @@ function youGaveFun() {
     line.classList.add('lineGaveCss');
     let inputDetail = document.createElement('input');
     inputDetail.setAttribute('id','inputGaveCss');
+    // let inputData = document.getElementById("inputGaveCss").value;
+    // console.log(inputData);
     inputDetail.setAttribute('type','number')
     inputDetail.setAttribute('placeholder','Enter Amount')
     heading.innerHTML = "You Gave Rs 0 to Me";
     console.log(heading);
+    let gaveButton = document.createElement('button');
+    gaveButton.setAttribute('id','buttonGaveCss');
+    gaveButton.innerHTML= "Save";
+
 
     // gavDiv.appendChild(heading)
     contentDiv.appendChild(heading);
     contentDiv.appendChild(line)
     contentDiv.appendChild(inputDetail);
+    contentDiv.appendChild(gaveButton);
     mainContent.appendChild(contentDiv);
 
     mainBody.appendChild(mainContent);
@@ -105,15 +112,27 @@ function youGotFun() {
     line.classList.add('lineGotCss');
     let inputDetail = document.createElement('input');
     inputDetail.setAttribute('id','inputGotCss');
+    // let inputGotData = document.getElementById('inputGotCss').value;
+    // console.log(inputGotData);
+    // console.log(inputDetail.value);
     inputDetail.setAttribute('type','number')
     inputDetail.setAttribute('placeholder','Enter Amount')
     heading.innerHTML = "You Got Rs 0 to Me";
     console.log(heading);
+    let gotButton = document.createElement('button');
+    gotButton.setAttribute('id','buttonGotCss');
+    gotButton.innerHTML= "Save";
+
+    gotButton.addEventListener('click',function(){
+        alert("I am shuvam");
+        
+    })
 
     // gavDiv.appendChild(heading)
     contentDiv.appendChild(heading);
     contentDiv.appendChild(line)
     contentDiv.appendChild(inputDetail);
+    contentDiv.appendChild(gotButton);
     mainContent.appendChild(contentDiv);
 
     mainBody.appendChild(mainContent);
