@@ -81,6 +81,7 @@ function youGaveFun() {
     gaveNote.setAttribute('placeholder','NOTE');
     gaveNote.setAttribute('id','gaveNoteCss');
     heading.innerHTML = "You Gave Rs 0 to Me";
+    heading.setAttribute('id','headingCss');
     console.log(heading);
     let gaveButton = document.createElement('button');
     gaveButton.setAttribute('id','buttonGaveCss');
@@ -100,13 +101,15 @@ function youGaveFun() {
         let inputData = document.getElementById('inputGaveCss').value;
         let gaveNoteData = document.getElementById('gaveNoteCss').value;
         let gaveData = document.createElement('div');
-        gaveData.innerHTML = "Note: " + gaveNoteData + "<br>" +"Amount:" + inputData;
+        gaveData.setAttribute('id','gaveDataCss');
+        gaveData.innerHTML = gaveNoteData + "<br>" + inputData;
         console.log(gaveData);
         // console.log(inputData);
-        if(inputData>0){
+        if(inputData>0 && gaveNoteData){
             document.getElementById('inputGaveCss').style.display ="none";
              document.getElementById('buttonGaveCss').style.display='none';
              document.getElementById('gaveNoteCss').style.display ="none";
+             document.getElementById('headingCss').style.display="none";
             contentDiv.appendChild(gaveData);
         }
         else{
@@ -150,6 +153,7 @@ function youGotFun() {
     gotNote.setAttribute('id','gotNoteCss');
     heading.innerHTML = "You Got Rs 0 to Me";
     console.log(heading);
+    heading.setAttribute('id','headingCss');
     let gotButton = document.createElement('button');
     gotButton.setAttribute('id','buttonGotCss');
     gotButton.innerHTML= "Save";
@@ -167,17 +171,19 @@ function youGotFun() {
         let inputData = document.getElementById('inputGotCss').value;
         let gotData = document.createElement('div');
         let gotNoteData = document.getElementById('gotNoteCss').value;
+            // gotDataData.setAttribute('id','gotdataCss')
         // let gotNoteData = document.createElement('div');
         gotData.setAttribute('id','gotDataCss');
         // document.getElementById('inputGotCss').style.display="none";
         // document.getElementById('buttonGotCss').style.display="none";
-        gotData.innerHTML = "Note:" + gotNoteData + '<br>' +"Amount:" + inputData ;
+        gotData.innerHTML =  gotNoteData + '<br>' + inputData ;
         console.log(gotData);
         // console.log(inputData);
-        if(inputData>0){
+        if(inputData>0 && gotNoteData ){
             document.getElementById('inputGotCss').style.display="none";
             document.getElementById('buttonGotCss').style.display="none";
             document.getElementById('gotNoteCss').style.display="none";
+            document.getElementById('headingCss').style.display="none";
             contentDiv.appendChild(gotData);
         }
         else{

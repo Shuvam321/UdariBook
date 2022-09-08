@@ -148,4 +148,12 @@ body{
 }
 #gotDataCss{
     border: 2px solid red;
+    box-shadow: 2px 2px 2px red;
+    text-align: left;
+}
+
+#gaveDataCss{
+    border: 2px solid green;
+    box-shadow: 2px 2px 2px green;
+    text-align: right;
 }
