@@ -76,6 +76,10 @@ function youGaveFun() {
     // console.log(inputData);
     inputDetail.setAttribute('type','number')
     inputDetail.setAttribute('placeholder','Enter Amount')
+    let gaveNote = document.createElement('input');
+    gaveNote.setAttribute('type','text');
+    gaveNote.setAttribute('placeholder','NOTE');
+    gaveNote.setAttribute('id','gaveNoteCss');
     heading.innerHTML = "You Gave Rs 0 to Me";
     console.log(heading);
     let gaveButton = document.createElement('button');
@@ -86,7 +90,30 @@ function youGaveFun() {
     // gavDiv.appendChild(heading)
     contentDiv.appendChild(heading);
     contentDiv.appendChild(line)
+    contentDiv.appendChild(gaveNote);
     contentDiv.appendChild(inputDetail);
+
+    gaveButton.addEventListener('click',function(){
+        // window.alert("I am shuvam");
+        // document.getElementById('inputGaveCss').style.display ="none";
+        // document.getElementById('buttonGaveCss').style.display='none';
+        let inputData = document.getElementById('inputGaveCss').value;
+        let gaveNoteData = document.getElementById('gaveNoteCss').value;
+        let gaveData = document.createElement('div');
+        gaveData.innerHTML = "Note: " + gaveNoteData + "<br>" +"Amount:" + inputData;
+        console.log(gaveData);
+        // console.log(inputData);
+        if(inputData>0){
+            document.getElementById('inputGaveCss').style.display ="none";
+             document.getElementById('buttonGaveCss').style.display='none';
+             document.getElementById('gaveNoteCss').style.display ="none";
+            contentDiv.appendChild(gaveData);
+        }
+        else{
+            alert("Enter Valid Data");
+        }
+        
+    })
     contentDiv.appendChild(gaveButton);
     mainContent.appendChild(contentDiv);
 
@@ -115,24 +142,52 @@ function youGotFun() {
     // let inputGotData = document.getElementById('inputGotCss').value;
     // console.log(inputGotData);
     // console.log(inputDetail.value);
-    inputDetail.setAttribute('type','number')
-    inputDetail.setAttribute('placeholder','Enter Amount')
+    inputDetail.setAttribute('type','number');
+    inputDetail.setAttribute('placeholder','Enter Amount');
+    let gotNote = document.createElement('input');
+    gotNote.setAttribute('type','text');
+    gotNote.setAttribute('placeholder','NOTE');
+    gotNote.setAttribute('id','gotNoteCss');
     heading.innerHTML = "You Got Rs 0 to Me";
     console.log(heading);
     let gotButton = document.createElement('button');
     gotButton.setAttribute('id','buttonGotCss');
     gotButton.innerHTML= "Save";
 
-    gotButton.addEventListener('click',function(){
-        alert("I am shuvam");
-        
-    })
-
+    
+    
     // gavDiv.appendChild(heading)
     contentDiv.appendChild(heading);
     contentDiv.appendChild(line)
+    contentDiv.appendChild(gotNote);
     contentDiv.appendChild(inputDetail);
+    
+    gotButton.addEventListener('click',function(){
+        // alert("I am shuvam");
+        let inputData = document.getElementById('inputGotCss').value;
+        let gotData = document.createElement('div');
+        let gotNoteData = document.getElementById('gotNoteCss').value;
+        // let gotNoteData = document.createElement('div');
+        gotData.setAttribute('id','gotDataCss');
+        // document.getElementById('inputGotCss').style.display="none";
+        // document.getElementById('buttonGotCss').style.display="none";
+        gotData.innerHTML = "Note:" + gotNoteData + '<br>' +"Amount:" + inputData ;
+        console.log(gotData);
+        // console.log(inputData);
+        if(inputData>0){
+            document.getElementById('inputGotCss').style.display="none";
+            document.getElementById('buttonGotCss').style.display="none";
+            document.getElementById('gotNoteCss').style.display="none";
+            contentDiv.appendChild(gotData);
+        }
+        else{
+            alert("Enter Valid Data");
+        }
+        
+    })
     contentDiv.appendChild(gotButton);
+
+
     mainContent.appendChild(contentDiv);
 
     mainBody.appendChild(mainContent);

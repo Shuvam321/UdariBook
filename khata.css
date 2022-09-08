@@ -65,6 +65,7 @@ body{
     box-shadow: 1px 3px #888888;
     border: none;
     width: 90%;
+    margin: 20px;
     /* font-family: 'Times New Roman', Times, serif; */
     /* color: green; */
 }
@@ -87,6 +88,26 @@ body{
     border: none;
     width: 90%;
     color: red;
+    margin: 20px;
+   
+}
+#gotNoteCss{
+    margin-left: 20px;
+    padding: 12px;
+    box-shadow: 1px 3px #888888;
+    border: none;
+    width: 90%;
+    color: red;
+    
+}
+#gaveNoteCss{
+    margin-left: 20px;
+    padding: 12px;
+    box-shadow: 1px 3px #888888;
+    border: none;
+    width: 90%;
+    color: red;
+    
 }
 
 .headingGotCss{
@@ -124,4 +145,7 @@ body{
     /* border: none; */
     box-shadow: 2px 1px green;
     margin-top: 18px;
+}
+#gotDataCss{
+    border: 2px solid red;
 }
