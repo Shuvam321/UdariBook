@@ -18,13 +18,18 @@ function addCustomer() {
         let mainBody = document.getElementById("container");
         let detail = document.createElement('div');
         detail.classList.add('detail');
+        let numberDiv = document.createElement('div');
+        numberDiv.setAttribute('id','NumberDivCss');
+        let amountDiv = document.createElement('div');
+        amountDiv.setAttribute('id','amountDivCss');
         // let customerDetail = document.createElement('div');
         data.push(customerdetail);
         console.log(data);
 
 
-
+        numberDiv.innerHTML = "1";
         customerDetail.innerHTML = customerdetail;
+        amountDiv.innerHTML = "Rs. 100";
         customerDetail.classList.add('customerdetailCss')
         let youGave = document.createElement('button');
         youGave.classList.add('youGaveCss');
@@ -37,7 +42,15 @@ function addCustomer() {
         youGave.innerHTML = "YOU GAVE";
         youGot.innerHTML = "YOU GOT";
 
-        detail.append(customerDetail);
+        
+        // for(let i = 1; i < 100 ;i++){
+        //     numberDiv.innerHTML = i;
+            // console.log(i);
+        // }
+
+        detail.appendChild(numberDiv);
+        detail.appendChild(customerDetail);
+        detail.appendChild(amountDiv)
         detail.appendChild(youGave);
         detail.appendChild(youGot);
 
