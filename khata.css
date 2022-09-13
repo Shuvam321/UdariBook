@@ -189,3 +189,8 @@
     /* margin: 20px 0px 20px 0px; */
     /* border:2px solid red; */
 }
+
+.customerDiv{
+    border: 2px solid red;
+    margin: 20px;
+}

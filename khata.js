@@ -18,19 +18,24 @@ function addCustomer() {
         let mainBody = document.getElementById("container");
         let detail = document.createElement('div');
         detail.classList.add('detail');
+        detail.setAttribute('id','detailCss')
+        let customerDiv = document.createElement('div');
+        customerDiv.classList.add('customerDiv');
+        customerDiv.setAttribute('id','customerDivCss');
         let numberDiv = document.createElement('div');
         numberDiv.setAttribute('id','NumberDivCss');
         let amountDiv = document.createElement('div');
         amountDiv.setAttribute('id','amountDivCss');
         // let customerDetail = document.createElement('div');
         data.push(customerdetail);
+        l = data.length;
         console.log(data);
 
 
-        numberDiv.innerHTML = "1";
+        numberDiv.innerHTML = data.length ;
         customerDetail.innerHTML = customerdetail;
-        amountDiv.innerHTML = "Rs. 100";
-        customerDetail.classList.add('customerdetailCss')
+        amountDiv.innerHTML = "Rs. 0";
+        customerDetail.classList.add('customerdetailCss');
         let youGave = document.createElement('button');
         youGave.classList.add('youGaveCss');
         // youGave.setAttribute('click','youGaveFun()');
@@ -42,20 +47,32 @@ function addCustomer() {
         youGave.innerHTML = "YOU GAVE";
         youGot.innerHTML = "YOU GOT";
 
+
+
         
         // for(let i = 1; i < 100 ;i++){
         //     numberDiv.innerHTML = i;
-            // console.log(i);
+        //     console.log(i);
         // }
 
-        detail.appendChild(numberDiv);
-        detail.appendChild(customerDetail);
-        detail.appendChild(amountDiv)
-        detail.appendChild(youGave);
-        detail.appendChild(youGot);
+        customerDiv.appendChild(numberDiv);
+        customerDiv.appendChild(customerDetail);
+        customerDiv.appendChild(amountDiv);
+        // customerDiv.appendChild(youGave);
+        // customerDiv.appendChild(youGot);
+        customerDiv.addEventListener('click',function(){
+            document.getElementById('navbar').style.display='none';
+            customerDiv.appendChild(youGave);
+            customerDiv.appendChild(youGot);
+
+            
+        });
+        detail.appendChild(customerDiv);
 
         mainBody.appendChild(detail);
 
+
+        
         // for(var i=0; i<data.length;i++){
         //     if(data[i]==data[i-1]){
         //         alert("same data");
