@@ -18,21 +18,23 @@ function addCustomer() {
         let mainBody = document.getElementById("container");
         let detail = document.createElement('div');
         detail.classList.add('detail');
-        detail.setAttribute('id','detailCss')
+        detail.setAttribute('id',data.length)
         let customerDiv = document.createElement('div');
         customerDiv.classList.add('customerDiv');
         customerDiv.setAttribute('id','customerDivCss');
         let numberDiv = document.createElement('div');
-        numberDiv.setAttribute('id','NumberDivCss');
+        numberDiv.classList.add('NumberDivCss');
+        // numberDiv.setAttribute('id',data.length);
+        console.log()
         let amountDiv = document.createElement('div');
         amountDiv.setAttribute('id','amountDivCss');
         // let customerDetail = document.createElement('div');
         data.push(customerdetail);
-        l = data.length;
+        let l = data.length;
         console.log(data);
 
 
-        numberDiv.innerHTML = data.length ;
+        numberDiv.innerHTML = l;
         customerDetail.innerHTML = customerdetail;
         amountDiv.innerHTML = "Rs. 0";
         customerDetail.classList.add('customerdetailCss');
@@ -62,8 +64,15 @@ function addCustomer() {
         // customerDiv.appendChild(youGot);
         customerDiv.addEventListener('click',function(){
             document.getElementById('navbar').style.display='none';
+            // document.getElementById(data.length).style.display='none';
             customerDiv.appendChild(youGave);
             customerDiv.appendChild(youGot);
+
+            // if (this.childNodes[1].style.visibility == "visible") {
+            //     this.childNodes[1].style.visibility = "hidden";  //hide item
+            //   } else {
+            //     this.childNodes[1].style.visibility = "visible";  //show item
+            //   }
 
             
         });

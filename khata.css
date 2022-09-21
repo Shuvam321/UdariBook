@@ -63,7 +63,7 @@
     /* color: yellow; */
 }
 
-#NumberDivCss{
+.NumberDivCss{
     /* text-align: center; */
     display: inline;
     font-weight: bolder;
