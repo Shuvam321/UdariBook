@@ -18,9 +18,9 @@ function addCustomer() {
         let mainBody = document.getElementById("container");
         let detail = document.createElement('div');
         detail.classList.add('detail');
-        detail.setAttribute('id',data.length)
+        detail.setAttribute('id',data.length);
         let customerDiv = document.createElement('div');
-        customerDiv.classList.add('customerDiv');
+        customerDiv.classList.add('customerDiv'); // name vala box jismai naam, serial number and amount aa rha hai
         customerDiv.setAttribute('id','customerDivCss');
         let numberDiv = document.createElement('div');
         numberDiv.classList.add('NumberDivCss');
@@ -244,5 +244,7 @@ function youGotFun() {
 
     // gavDiv.appendChild(contentDiv);
 
+
+   
 
 }
