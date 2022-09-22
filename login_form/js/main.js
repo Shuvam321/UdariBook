@@ -55,3 +55,16 @@
     
 
 })(jQuery);
+
+function logIn(){
+    var email = document.getElementById('loginEmail').value;
+    var psw =  document.getElementById('loginPasssword').value;
+    console.log(email);
+    console.log(psw);
+    if(email == "kshuvam360@gmail.com"&& psw == "12345" ){
+        window.location = "../index.html";
+    }
+    else{
+        alert("invalide data")
+    }
+}
