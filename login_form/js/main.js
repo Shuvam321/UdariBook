@@ -59,11 +59,11 @@
 //my JS
 
 function logIn(){
-    var email = document.getElementById('loginEmail').value;
-    var psw =  document.getElementById('loginPasssword').value;
-    console.log(email);
-    console.log(psw);
-    if(email == "kshuvam360@gmail.com" && psw == "12345" ){
+    var loginEmail = document.getElementById('loginEmail').value;
+    var loginPsw =  document.getElementById('loginPasssword').value;
+    console.log(loginEmail);
+    console.log(loginPsw);
+    if(loginEmail == "kshuvam360@gmail.com" && loginPsw == "12345" ){
         window.location = "../index.html";
     }
     else{

@@ -7,5 +7,9 @@ function signUp(){
     console.log(repass);
     var email = document.getElementById('personalEmail').value;
     console.log(email);
+    // console.log(psw);
 
 }
+
+
+   
