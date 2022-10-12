@@ -276,3 +276,7 @@ function youGotFun() {
         window.location = "login_form/index.html";
         // window.location("./login_form/index.html")
   }
+
+  function signupDirection(){
+    window.location = "./signUp/index.html";
+  }
