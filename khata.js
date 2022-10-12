@@ -62,11 +62,15 @@ function addCustomer() {
         customerDiv.appendChild(amountDiv);
         // customerDiv.appendChild(youGave);
         // customerDiv.appendChild(youGot);
-        customerDiv.addEventListener('click',function(){
+        customerDiv.addEventListener('click',() => {
+           
             document.getElementById('navbar').style.display='none';
             // document.getElementById(data.length).style.display='none';
+            // customerDiv.appendChild(customerHeading);
             customerDiv.appendChild(youGave);
             customerDiv.appendChild(youGot);
+
+           
 
             // if (this.childNodes[1].style.visibility == "visible") {
             //     this.childNodes[1].style.visibility = "hidden";  //hide item
@@ -244,7 +248,31 @@ function youGotFun() {
 
     // gavDiv.appendChild(contentDiv);
 
-
    
 
 }
+
+ //geolocation 
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  
+  
+  function showPosition(position) {
+    // x.innerHTML = "Latitude: " + position.coords.latitude + 
+    // "<br>Longitude: " + position.coords.longitude;
+
+    window.alert("Latitude: " + position.coords.latitude +  "\n" +
+    "Longitude: " + position.coords.longitude);
+    console.log("Latitude: " + position.coords.latitude + "\n" +
+    "Longitude: " + position.coords.longitude);
+  }
+
+  function loginDirection(){
+
+        window.location = "login_form/index.html";
+        // window.location("./login_form/index.html")
+  }

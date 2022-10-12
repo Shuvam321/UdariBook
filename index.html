@@ -18,8 +18,59 @@
 
   <!-- <div class="mx-auto"> -->
   <!-- <nav class="navbar navbar-expand-lg bg-light"> -->
-    <div class="container">
-      <a class="navbar-brand titleKhata" href="#"><i class="fa fa-credit-card"></i> UdariBook</a><br>
+    <!-- <div class="container"> -->
+      <a class="navbar-brand titleKhata" href="#"><i class="fa fa-credit-card"></i> UdariBook</a>
+      <!-- <div class="mx-1">
+        <button class="btn btn-outline-warning mt-2" type="submit"  data-bs-toggle="modal" data-bs-target="#loginBackdrop">login</button>
+        <button class="btn btn-outline-info mt-2" type="submit"  data-bs-toggle="modal" data-bs-target="#signUpBackdrop">Sign Up</button>
+      </div> -->
+      <nav class="navbar bg-light fixed-top" style="height:10px;">
+        <div class="container">
+          <a class="navbar-brand titleKhata" href="#"><i class="fa fa-credit-card"></i> UdariBook</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa fa-credit-card"></i> UdariBook</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+              <!-- <form class="d-flex mt-3" role="search"> -->
+                <div class="mx-2 mt-3">
+                  <button class="btn btn-outline-warning mt-2" type="submit"  data-bs-toggle="modal" data-bs-target="#loginBackdrop" onclick="loginDirection()">login</button>
+                  <button class="btn btn-outline-info mt-2" type="submit"  data-bs-toggle="modal" data-bs-target="#signUpBackdrop">Sign Up</button>
+                </div>
+              <!-- </form> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+      
       <!-- <input type="button" value="No, really, go back!" onclick="history.go(-1)"> -->
       <!-- <form><input type="button" value="Back" onclick="history.go(-1)"></form> -->
       <!-- <form><input type="button" value="Back" onclick="history.go(-1)"></form> -->
@@ -35,12 +86,15 @@
                 <span class="navbar-toggler-icon"></span>
               </button> -->
 
+              
+
       <!-- <form class="d-flex" role="search" id="formDetail"> -->
       <div class="navbar-brand container" style="display: flex;" id="navbar">
         <input class="form-control me-2  text-center" id="customerName" type="search" placeholder="Search Customer"
-          aria-label="Search" style="display:inline; margin: 20px 0px;">
-           <button class="btn btn-outline-success" type="button" onclick="addCustomer()" style="margin:20px 0px;"><i class="fa fa-user-plus"></i>
+          aria-label="Search" style="display:inline; margin: 35px 0px 10px 0px; ">
+           <button class="btn btn-outline-success" type="button" onclick="addCustomer()" style="margin: 35px 0px 10px 0px;"><i class="fa fa-user-plus"></i>
           Add Customer</button>
+          
         <!-- <button class="btn btn-outline-success " type="submit" onclick="search()">Search</button> -->
         <!-- <button class="btn btn-primary" type="button">Button</button> -->
       </div>
@@ -73,7 +127,8 @@
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>-->
       </div>
-    </div>
+    <!-- </div> -->
+    
   <!-- </nav> -->
   <!-- </div> -->
   <!-- <div class="d-grid gap-2 col-6 mt-2">
