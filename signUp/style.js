@@ -2,7 +2,7 @@
 function signUp() {
     var user = document.getElementById('user').value;
     console.log(user);
-    var pass = document.getElementById('pass').value;
+    var password = document.getElementById('pass').value;
     console.log(pass);
     var repass = document.getElementById('repass').value;
     console.log(repass);
@@ -10,12 +10,15 @@ function signUp() {
     console.log(email);
     // console.log(psw);
 
-    var person = { 'user': user, 
-    'password': pass, 
+    var person = { 
+    'user': user, 
+    'password': password, 
     'repass': repass, 
     'email': email };
-    if(pass == repass){
 
+    // console.log(person.password);
+    if(password == repass){
+    window.location = "../login_form/index.html";   
     console.log(person);
     localStorage.setItem('person', JSON.stringify(person));
     

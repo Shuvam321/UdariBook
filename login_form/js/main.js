@@ -60,17 +60,42 @@
 
 function logIn(){
     var loginEmail = document.getElementById('loginEmail').value;
-    var loginPsw =  document.getElementById('loginEmail').value;
+    var loginPsw =  document.getElementById('loginPasssword').value;
     console.log(loginEmail);
     console.log(loginPsw);
-    var logIn = { 'email': getElementById('loginEmail'), 'password': getElementById('phloginEmailoto')};
-
-    alert(logIn);
-    localStorage.setItem('person', JSON.stringify(logIn));
+    
+    
     // if(loginEmail == "kshuvam360@gmail.com" && loginPsw == "12345" ){
     //     window.location = "../index.html";
     // }
     // else{
     //     alert("invalide data")
     // }
+
+    console.log(localStorage.getItem('person'));
+    // console.log(person)
+    var detail = localStorage.getItem('person')
+
+    var data =  JSON.parse(detail);
+    console.log(data);
+    console.log(typeof(data.password))
+    // console.log(typeof(parseInt(data.password));
+    var num = parseInt(data.password);
+    console.log(typeof(num));
+
+    // if(loginEmail == data.email && loginPsw == data.pass){
+    //     window.location = "../index.html";
+
+    // }
+
+    // else{
+    //     alert("Enter valid data")
+    // }
+    if(loginEmail === data.email && parseInt(loginPsw) === parseInt(data.password)){
+        window.location = "../index.html";
+    }
+    else{
+        alert("Enter valid data");
+    }
+    
 }
