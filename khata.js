@@ -280,3 +280,9 @@ function youGotFun() {
   function signupDirection(){
     window.location = "./signUp/index.html";
   }
+
+  var loaderCode = document.getElementById('mainLoader');
+
+  function myLoader(){
+    loaderCode.style.display = "none";
+  }
