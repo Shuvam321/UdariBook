@@ -203,7 +203,7 @@
     margin: -5px;
 } */
 
-/*Loader CSS*/
+/*Loader CSS Start*/
 
 .mainLoader {
   display: -webkit-box;
@@ -287,3 +287,4 @@ circle:nth-of-type(4) {
   }
 }
  
+/*Loader CSS Ends*/
