@@ -119,3 +119,10 @@ function logIn() {
     // }
 }
 }
+
+
+var loaderCode = document.getElementById('mainLoader');
+
+function myLoader(){
+  loaderCode.style.display = "none";
+}

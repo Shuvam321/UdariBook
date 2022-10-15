@@ -45,6 +45,13 @@ function signUp() {
         alert("Please check password and repassword");
     }
 
-};
+}
+
+
+
+function myLoader(){
+    var loaderCode = document.getElementById('mainLoader').style.display='none';
+//   loaderCode.style.display = "none";
+}
 
 

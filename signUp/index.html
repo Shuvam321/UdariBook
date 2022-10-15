@@ -12,10 +12,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="/signUp/style.js"></script> -->
+    <!--loader file-->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
 </head>
 
-<body>
+<body onload="myLoader()">
+    <div class="mainLoader" id="mainLoader">
+
+        <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+          <circle cx="170" cy="170" r="160" stroke="#E2007C" />
+          <circle cx="170" cy="170" r="135" stroke="#404041" />
+          <circle cx="170" cy="170" r="110" stroke="#E2007C" />
+          <circle cx="170" cy="170" r="85" stroke="#404041" />
+        </svg>
     
+      </div>
     <div class="login-wrap">
         <div class="login-html">
              <!-- <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>  -->
