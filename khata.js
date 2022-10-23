@@ -259,7 +259,12 @@ function youGotFun() {
     } else { 
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
-  
+    var loaderCode = document.getElementById('mainLoader');
+
+    function myLoader(){
+      loaderCode.style.display = "none";
+    }
+    
   
   function showPosition(position) {
     // x.innerHTML = "Latitude: " + position.coords.latitude + 
@@ -281,8 +286,19 @@ function youGotFun() {
     window.location = "./signUp/index.html";
   }
 
-  var loaderCode = document.getElementById('mainLoader');
+  
+// tabs script
 
-  function myLoader(){
-    loaderCode.style.display = "none";
-  }
+//   function openCity(evt, cityName) {
+//     var i, x, tablinks;
+//     x = document.getElementsByClassName("city");
+//     for (i = 0; i < x.length; i++) {
+//       x[i].style.display = "none";
+//     }
+//     tablinks = document.getElementsByClassName("tablink");
+//     for (i = 0; i < x.length; i++) {
+//       tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+//     }
+//     document.getElementById(cityName).style.display = "block";
+//     evt.currentTarget.firstElementChild.className += " w3-border-red";
+//   }

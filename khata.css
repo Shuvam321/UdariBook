@@ -203,6 +203,23 @@
     margin: -5px;
 } */
 
+.tabCSS{
+  /* position: -webkit-sticky; */
+  /* position: relative; */
+  position: sticky;
+  bottom: 0;
+  /* top: 439px; */
+}
+
+.sticky {
+  /* position: -webkit-sticky; */
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100vw;
+  padding: auto;
+  /* background: yellow; */
+}
 /*Loader CSS Start*/
 
 .mainLoader {
@@ -288,3 +305,4 @@ circle:nth-of-type(4) {
 }
  
 /*Loader CSS Ends*/
+
