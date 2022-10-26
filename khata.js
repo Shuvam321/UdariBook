@@ -65,6 +65,7 @@ function addCustomer() {
         customerDiv.addEventListener('click',() => {
            
             document.getElementById('navbar').style.display='none';
+            document.getElementById('tabDiv').style.display='none';
             // document.getElementById(data.length).style.display='none';
             // customerDiv.appendChild(customerHeading);
             customerDiv.appendChild(youGave);

@@ -18,7 +18,7 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 
-<body onload="myLoader()">
+<body onload="myLoader()" id="mainBody">
 
   <!-- <h1>Hello, world!</h1> -->
 
@@ -177,8 +177,8 @@
   <!-- <div id="gaveDiv"></div>
           <div id="gotDiv"></div> -->
   <div id="container" class="" style="border:2px solid red; margin: 50px 0px 0px 0px;"></div>
-  <div class="">
-    <!-- <ul class="nav nav-pills mb-3 sticky" id="pills-tab" role="tablist" style="padding-left: 22px;">
+
+  <!-- <ul class="nav nav-pills mb-3 sticky" id="pills-tab" role="tablist" style="padding-left: 22px;">
     <li class="nav-item" role="presentation">
       <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
     </li>
@@ -192,7 +192,7 @@
       <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
     </li>
   </ul>  -->
-    <!-- <ul class="nav justify-content-center sticky" style="padding-left: 22px;">
+  <!-- <ul class="nav justify-content-center sticky" style="padding-left: 22px;">
     <li class="nav-item">
       <a class="nav-link active" id="pills-home-tab" aria-current="page" href="#">Active</a>
     </li>
@@ -206,14 +206,13 @@
       <a class="nav-link disabled" >Disabled</a>
     </li>
   </ul> -->
-
+  <div class="tabDiv" id="tabDiv">
     <nav class="nav nav-pills flex-column flex-sm-row sticky" id="pills-tab" role="tablist"
-      style="font-size: 20px; padding-left: 44px">
-      <a class="flex-sm-fill text-sm-center nav-link " aria-current="page" href="#"><i
-          class="fa fa-file-text fa-2xs"></i></a>
-      <a class="flex-sm-fill text-sm-center nav-link " href="#"><i class="fa fa-calendar-plus-o"></i></a>
-      <a class="flex-sm-fill text-sm-center nav-link " href="#"><i class="fa fa-calculator"></i></a>
-      <a class="flex-sm-fill text-sm-center nav-link " href="#"><i class="fa fa-user"></i></a>
+      style="font-size: 20px; padding: 0px 0px 40px 44px">
+      <a class="flex-sm-fill text-sm-center nav-link " aria-current="page" href="#mainBody"><i class="fa fa-file-text falg"></i></a>
+      <a class="flex-sm-fill text-sm-center nav-link " href="#"><i class="fa fa-calendar-plus-o falg"></i></a>
+      <a class="flex-sm-fill text-sm-center nav-link " href="#"><i class="fa fa-calculator falg"></i></a>
+      <a class="flex-sm-fill text-sm-center nav-link " href="#"><i class="fa fa-user falg"></i></a>
     </nav>
   </div>
   <!-- <div class="tab-content" id="pills-tabContent">
