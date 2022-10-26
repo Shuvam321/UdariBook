@@ -190,6 +190,10 @@
     color: red;
     font-weight: bolder;
     font-size: 28px;
+    /* text-align: center; */
+    display: flex;
+    justify-items: center;
+    align-content: center;
     /* margin: 20px 0px 20px 0px; */
     /* border:2px solid red; */
 }
