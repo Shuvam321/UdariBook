@@ -1,3 +1,4 @@
+
 var calendar = document.getElementById("calendar-table");
 var gridTable = document.getElementById("table-body");
 var currentDate = new Date();

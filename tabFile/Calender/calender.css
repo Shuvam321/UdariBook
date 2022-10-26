@@ -336,13 +336,11 @@ h3,h4,h5 {
     }
   }
 
-  .calenderSticky{
-     /* position: -webkit-sticky; */
+  .calenderSticky{   
   position: fixed;
   bottom: 0;
   height: 30px;
   width: 100vw;
-  /* padding: auto; */
   padding: 0px 0px 44px 44px;
-  /* background: yellow; */
+  
   }
