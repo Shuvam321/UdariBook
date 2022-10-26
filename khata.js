@@ -260,8 +260,10 @@ function youGotFun() {
     } else { 
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
+    
+    
     var loaderCode = document.getElementById('mainLoader');
-
+    
     function myLoader(){
       loaderCode.style.display = "none";
     }
