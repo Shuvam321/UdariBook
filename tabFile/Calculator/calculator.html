@@ -10,6 +10,7 @@
   <link rel="icon" type="image/x-icon" href="./image/1152px-Font_Awesome_5_solid_credit-card.svg.png">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <link rel="stylesheet" href="khata.css">
+  <link rel="stylesheet" href="calculator.css" class="css">
   <script src="https://kit.fontawesome.com/12a6f7d1ea.js" crossorigin="anonymous"></script>
   <!--Loader file-->
   <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -18,5 +19,93 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 <body>
-    
-</body>
+    <div class="bubbles">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"></span>
+        <span class="six"></span>
+        <span class="seven"></span>
+        <span class="seven"></span>
+      </div>
+      <div class="bubbles">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"></span>
+        <span class="six"></span>
+        <span class="seven"></span>
+        <span class="seven"></span>
+      </div>
+      <div class="bubbles">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"></span>
+        <span class="six"></span>
+        <span class="seven"></span>
+        <span class="seven"></span>
+      </div>
+      <div class="bubbles">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"></span>
+        <span class="six"></span>
+        <span class="seven"></span>
+        <span class="seven"></span>
+      </div>
+      <div class="container">
+        <form action="#" name="forms">
+          <input type="text" name="answer">
+          <div class="buttons">
+            <input type="button" value="AC" onclick="forms.answer.value = ''">
+            <input type="button" value="DEL" onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)">
+            <input type="button" value="%" onclick="forms.answer.value += '%'">
+            <input type="button" value="/" onclick="forms.answer.value += '/'">
+          </div>
+          <div class="buttons">
+            <input type="button" value="7" onclick="forms.answer.value += '7'">
+            <input type="button" value="8" onclick="forms.answer.value += '8'">
+            <input type="button" value="9" onclick="forms.answer.value += '9'">
+            <input type="button" value="*" onclick="forms.answer.value += '*'">
+          </div>
+          <div class="buttons">
+            <input type="button" value="4" onclick="forms.answer.value += '4'">
+            <input type="button" value="5" onclick="forms.answer.value += '5'">
+            <input type="button" value="6" onclick="forms.answer.value += '6'">
+            <input type="button" value="-" onclick="forms.answer.value += '-'">
+          </div>
+          <div class="buttons">
+            <input type="button" value="1" onclick="forms.answer.value += '1'">
+            <input type="button" value="2" onclick="forms.answer.value += '2'">
+            <input type="button" value="3" onclick="forms.answer.value += '3'">
+            <input type="button" value="+" onclick="forms.answer.value += '+'">
+          </div>
+          <div class="buttons">
+            <input type="button" value="0" onclick="forms.answer.value += '0'">
+            <input type="button" value="00" onclick="forms.answer.value += '00'">
+            <input type="button" value="." onclick="forms.answer.value += '.'">
+            <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
+          </div>
+        </form>
+      </div>
+      </br>
+      
+      <!-- <footer>
+        <div class="links">
+          <a href="https://www.buymeacoffee.com/danishlaeeq">
+            <img src="https://i.giphy.com/media/kmIZ4lx2ZHpr5jY0W4/giphy.webp" alt="buy me a coffee" class="coffee" />
+          </a>
+          <a href="https://patreon.com/danishlaeeq" data-patreon-widget-type="become-patron-button">
+            <i class="fab fa-patreon"></i>
+            UdariBook</a>
+        </div>
+      </footer> -->
+    </body>
+    <script src="calculator.js"></script>
+</html>
