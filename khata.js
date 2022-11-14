@@ -281,7 +281,7 @@ function youGotFun() {
 
   function loginDirection(){
 
-        window.location = "login_form/index.html";
+        window.location = "./login_form/index.html";
         // window.location("./login_form/index.html")
   }
 
