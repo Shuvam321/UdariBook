@@ -1,0 +1,15 @@
+/* .profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* .img-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
