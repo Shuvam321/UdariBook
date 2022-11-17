@@ -113,6 +113,15 @@ function logIn() {
     if (loginEmail === data[i].email && parseInt(loginPsw) === parseInt(data[i].password)) {
         window.location = "../index.html";
         // alert("Your enter right data....");
+        var loginDetail = {
+            'userName': data[i].user,
+            // 'password': data[i].password,
+            // 'repass': repass,
+            'email': data[i].email,
+        }
+        // console.log(loginDetail);
+        
+
     }
     // else {
     //     alert("Enter valid data");
