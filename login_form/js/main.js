@@ -57,7 +57,7 @@
 })(jQuery);
 
 //my JS
-
+   var loginData = [];
 function logIn() {
     var loginEmail = document.getElementById('loginEmail').value;
     var loginPsw = document.getElementById('loginPasssword').value;
@@ -111,7 +111,7 @@ function logIn() {
     //     alert("Enter valid data")
     // }
     if (loginEmail === data[i].email && parseInt(loginPsw) === parseInt(data[i].password)) {
-        window.location = "../index.html";
+        // window.location = "../index.html";
         // alert("Your enter right data....");
         var loginDetail = {
             'userName': data[i].user,
@@ -119,8 +119,12 @@ function logIn() {
             // 'repass': repass,
             'email': data[i].email,
         }
-        // console.log(loginDetail);
         
+
+        console.log(localStorage.setItem('profileData', JSON.stringify(loginDetail)));
+    //    console.log(localStorage.getItem('profileData', JSON.stringify(loginDetail)));
+        // console.log(loginDetail);
+
 
     }
     // else {
