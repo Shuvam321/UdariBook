@@ -89,8 +89,8 @@ function logIn() {
 
     for (var i = 0; i < data.length; i++) {
         // console.log("hiii..");
-        console.log(data[i].password);
         console.log(data[i].email);
+        console.log(data[i].password);
 
     
     // console.log("hiii...")
